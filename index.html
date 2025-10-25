@@ -7,8 +7,7 @@
         <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
 
         <!-- A FAVICON -->
-        <!-- TO DO: add the favicon here -->
-
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,8 +70,7 @@
                     <h3><span>&#10033;&nbsp;</span> Adding Decorative Images to HTML</h3>
                     <p>As explained above, a decorative images is one that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. When adding these in your HTML, you indicate that they are decorative by leaving the alt text attribute empty. You can't leave the alt attribute off completely, just blank. Generally though, you'll add decorative images using CSS.</p>
 
-                    <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
-
+                    <img src="images/square-red-blue.jpg" alt="" width="400" height="400">
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
 
@@ -80,8 +78,7 @@
                     <h3><span>&#10033;&nbsp;</span> Adding Images as Content is HTML</h3>
                     <p>For images that are content, and necessary for understanding the page (think products, maps, etc.) you cannot leave the alt text blank, and should use it to describe the image to the best of your ability. These should also use width and height attributes that come from the edited image itself.</p>
 
-                    <!-- TO DO: add the memphis recording service to this section below, I used "a neon sign hanging on a dark wall that says memphis recording service" as the alt text for this image it is 400px wide by 400px tall -->
-
+                    <img src="images/memphis-recording-service.jpg" alt="a neon sign hanging on a dark wall that says memphis recording service" width="400" height="400">
                     <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
             </section>
@@ -95,7 +92,9 @@
                     <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
                     
                     <!-- TO DO: Add the video from the files below using HTML5 -->
-
+                    <video controls width="400">
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>
                     <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
                 </section>
 
@@ -123,8 +122,7 @@
                 <h2>Using Tables in HTML</h2>
                 <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough to fit on the screen, even with their data, you should be fine.</p>
                 <table>
-                    <!-- TO DO: Complete the code below to create a caption for this table -->
-                    Hours of Operation
+                    <caption>Hours of Operation</caption>
 
                     <thead>
                         <tr>
@@ -144,8 +142,7 @@
                     </tr>
 
                     <tr>
-                        <!-- TO DO: Complete the code below to create a cell that will span all columns -->
-                        <!-- Wednesday - <span class="bold">Closed</span> -->
+                        <td colspan="2">Wednesday - <span class="bold">Closed</span></td>
                     </tr>
 
                     <tr>
@@ -160,13 +157,11 @@
 
                     <tr>
                         <td>Saturday</td>
-                        <!-- TO DO: Complete the code below to create a cell that will span two rows -->
                         <td rowspan="2"><span>Closed</span> By Appointment Only</td>
                     </tr>
 
                     <tr>
-                        <!-- TO DO: Complete the code below to create a cell containing that text -->
-                        <!-- Sunday -->
+                         <td>Sunday</td>
                     </tr>
                 </table>
             </section>
@@ -178,7 +173,7 @@
                 <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
 
                 <a href="#" aria-label="find us on facebook">
-                    <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" /></svg>
                 </a>
                 
                 <a href="#" aria-label="find us on instagram">
